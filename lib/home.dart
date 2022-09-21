@@ -12,7 +12,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: Text('Home Page',style: TextStyle(fontSize: 18),),
         centerTitle: true,
         backgroundColor: Colors.red,
         leading: Icon(Icons.account_balance),
@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
         height: MediaQuery.of(context).size.height,
         color: Colors.black,
         child: Center(
-          child: Text('NETFLIX', style: TextStyle(color: Colors.red, fontSize: 50,fontWeight: FontWeight.bold),),
+          child: Text('NETFLIX', style: TextStyle(color: Colors.red, fontSize: 44,fontWeight: FontWeight.bold),),
         ),
       ),
     );
