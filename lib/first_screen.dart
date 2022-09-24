@@ -26,7 +26,7 @@ class _FirstScreenState extends State<FirstScreen> {
       color: Colors.black,
       child:
       Center(
-        child: Image.network('https://res.cloudinary.com/practicaldev/image/fetch/s--_b-IfdIg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1647410910018/spTELtuIz.jpeg',),
+        child: Image.asset('assets/netflixx.png',),
       ),
     );
   }

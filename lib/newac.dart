@@ -39,7 +39,7 @@ class _NewAcState extends State<NewAc> {
                 child: TextFormField(
                   controller: _usernameController,
                   decoration: InputDecoration(
-                      fillColor: Colors.purple,
+                      fillColor: Colors.grey,
                       filled: true,
                       border: UnderlineInputBorder(),
                       labelText: 'Enter the Username',
@@ -53,7 +53,7 @@ class _NewAcState extends State<NewAc> {
                 child: TextFormField(
                   controller: _passwordController,
                   decoration: InputDecoration(
-                      fillColor: Colors.purple,
+                      fillColor: Colors.grey,
                       filled: true,
                       border: UnderlineInputBorder(),
                       labelText: 'Enter a new password',
