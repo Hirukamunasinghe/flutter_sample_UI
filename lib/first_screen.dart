@@ -36,8 +36,7 @@ class _FirstScreenState extends State<FirstScreen> {
   void navigateToLoginScreen(BuildContext context)
   {
     Future.delayed(Duration (seconds: 3), (){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home(username: '',) ));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home() ));
     });
   }
 }
-

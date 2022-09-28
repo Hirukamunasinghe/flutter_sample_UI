@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:new_home_page_sample/home.dart';
-
+import 'package:new_home_page_sample/user_page.dart';
 TextEditingController _usernameController = TextEditingController();
 TextEditingController _passwordController = TextEditingController();
 
@@ -84,7 +84,7 @@ class _LoginState extends State<Login> {
     if (_usernameController.text == 'user123' &&
         _passwordController.text == '12345') {
       print('Login success');
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home(username: _usernameController.text) ));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => UserPage(username: _usernameController.text) ));
     } else {
       print('Login Fail');
       showAlertDialog(context);

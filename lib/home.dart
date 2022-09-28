@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:new_home_page_sample/login.dart';
 import 'package:new_home_page_sample/newac.dart';
+import 'package:new_home_page_sample/user_page.dart';
 class Home extends StatefulWidget {
-  final String username;
-  const Home({Key? key, required this.username}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
                 height: 100,
                 child: ElevatedButton(
                   onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Login() ));
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Login() ));
                   },
                   style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.red)),
                   child: Text('Login',style: TextStyle(
@@ -75,6 +75,8 @@ class _HomeState extends State<Home> {
                   ),),
                 ),
               ),
+
+              ////////////IMAGE CONTAINER
               Container(
                 padding: EdgeInsets.only(top: 20, bottom: 20),
                 width: MediaQuery.of(context).size.width,

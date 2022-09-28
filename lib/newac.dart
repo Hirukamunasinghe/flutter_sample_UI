@@ -67,7 +67,7 @@ class _NewAcState extends State<NewAc> {
                 width: 200,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home(username: '') ));
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home() ));
                   },
                   style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.red)),
                   child: Text('Sign Up', style: TextStyle(color: Colors.black, fontSize: 20,fontWeight: FontWeight.bold),),
